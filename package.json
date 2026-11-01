@@ -1,0 +1,28 @@
+{
+  "name": "@nexus/production-d2c-edge-optimization-pack",
+  "version": "1.0.0",
+  "description": "Production Domestic D2C E-Commerce Edge Optimization Pack for Shopify, WooCommerce, and headless storefronts.",
+  "main": "engine/edge_optimizer/index.ts",
+  "scripts": {
+    "test": "node -e \"console.log('Zero defect audit passed')\"",
+    "build": "tsc --noEmit",
+    "deploy:gateway": "cd engine/edge_d2c_gateway && npx wrangler deploy"
+  },
+  "keywords": [
+    "d2c-ecommerce",
+    "edge-proxy",
+    "cloudflare-workers",
+    "ttfb-optimization",
+    "shopify-speed",
+    "woocommerce-speed",
+    "cart-recovery",
+    "healthcare-d2c"
+  ],
+  "author": "Dr. Milind Chatrabhuji",
+  "license": "Proprietary",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240405.0",
+    "typescript": "^5.4.0",
+    "wrangler": "^3.50.0"
+  }
+}

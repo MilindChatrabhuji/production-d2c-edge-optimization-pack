@@ -1,0 +1,12 @@
+name = "d2c-edge-optimizer-gateway"
+main = "worker.ts"
+compatibility_date = "2024-04-01"
+
+[vars]
+ENVIRONMENT = "production"
+EDGE_TARGET_SLA = "SUB_50MS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "nexus_d2c_production_db"
+database_id = "d1-d2c-cluster-live-way86"
